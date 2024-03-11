@@ -1,2 +1,2 @@
-# AZWebAppLD1-CosmosDB
+# AZWebAppCDB1
 Sample Microsoft Azure Web app with Cosmos DB
