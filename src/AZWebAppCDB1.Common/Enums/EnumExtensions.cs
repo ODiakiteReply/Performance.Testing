@@ -24,17 +24,17 @@ namespace Common.Extensions.Enum
         public static T ToEnumOr<T>(this string sString, Func<T> or)
         {
             T instance = (T)System.Enum.Parse(typeof(T), sString);
-            if (!System.Enum.IsDefined(typeof(T), instance) && !instance.ToString().Contains(","))
+            if (!System.Enum.IsDefined(typeof(T), instance) && !(instance.ToString()?.Contains(',') ?? true))
                 return or();
             return instance;
         }
 
         public static string GetEnumDescription(this System.Enum value)
         {
-            FieldInfo fi = value.GetType().GetField(value.ToString());
+            FieldInfo? fi = value.GetType().GetField(value.ToString());
 
-            DescriptionAttribute[] attributes =
-                (DescriptionAttribute[])fi.GetCustomAttributes(
+            DescriptionAttribute[]? attributes =
+                (DescriptionAttribute[]?)fi?.GetCustomAttributes(
                 typeof(DescriptionAttribute),
                 false);
 
