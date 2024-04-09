@@ -4,7 +4,7 @@ namespace AZWebAppCDB1.Common.Domain
 {
     public class CommentDTO
     {
-        public string Id { get; set; }
+        public string Id { get; set; } = string.Empty;
         public string Content { get; set; } = string.Empty;
         public DateTime? CreatedAt { get; set; }
         public string? Author { get; set; }
