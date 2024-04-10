@@ -1,6 +1,5 @@
 FROM mcr.microsoft.com/dotnet/aspnet:8.0-alpine AS base
 WORKDIR /app
-COPY /dist .
 
 ENTRYPOINT ["dotnet", "AZWebAppCDB1.API.dll"]
 
