@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AZWebAppCDB1.Common\AZWebAppCDB1.Common.csproj" />
+    <ProjectReference Include="..\AZWebAppCDB1.Models\AZWebAppCDB1.Models.csproj" />
+  </ItemGroup>
+
+</Project>
