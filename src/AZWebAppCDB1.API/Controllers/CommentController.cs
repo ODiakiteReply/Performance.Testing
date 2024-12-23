@@ -30,8 +30,16 @@ namespace AZWebAppCDB1.API.Controllers
         [HttpGet]
         public async Task<IActionResult> GetComments()
         {
-            var comments = await _commentService.GetAllAsync();
-            return Ok(comments);
+            //var comments = await _commentService.GetAllAsync();
+            Console.WriteLine("GetComments");
+            return Ok(new List<CommentDTO> { new() {
+                    Id = string.Empty,
+                    Content = "test content",
+                    CreatedAt = DateTime.Now,
+                    Author = "test author",
+                    UpdatedAt = DateTime.Now,
+                } 
+            });
         }
 
         [HttpGet("{id}")]

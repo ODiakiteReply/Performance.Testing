@@ -5,9 +5,9 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{46FBB65A-69E4-4A72-A8A9-C8AB5A1CB459}"
 	ProjectSection(SolutionItems) = preProject
-		.gitignore = .gitignore
-		Dockerfile = Dockerfile
-		README.md = README.md
+		..\.gitignore = ..\.gitignore
+		..\Dockerfile = ..\Dockerfile
+		..\README.md = ..\README.md
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AZWebAppCDB1.API", "AZWebAppCDB1.API\AZWebAppCDB1.API.csproj", "{EA926D75-5AFA-4E84-A637-8EE6C0B8C78A}"

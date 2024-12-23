@@ -38,11 +38,11 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
-app.MigrateDataBase(builder.Configuration);
+//app.MigrateDataBase(builder.Configuration);
 
 app.UseCors("Any");
 
-if (app.Environment.EnvironmentName == "Local")
+if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
