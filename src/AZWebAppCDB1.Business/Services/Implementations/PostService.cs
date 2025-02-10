@@ -1,11 +1,11 @@
 ﻿using AutoMapper;
-using AZWebAppCDB1.Models;
-using AZWebAppCDB1.Common.Domain;
-using AZWebAppCDB1.Business.Services.Interfaces;
-using AZWebAppCDB1.DataAccess.Repositories.CDRepositories.Interfaces;
+using Performance.Testing.Models;
+using Performance.Testing.Common.Domain;
+using Performance.Testing.Business.Services.Interfaces;
+using Performance.Testing.DataAccess.Repositories.CDRepositories.Interfaces;
 
 
-namespace AZWebAppCDB1.Business.Services.Implementations
+namespace Performance.Testing.Business.Services.Implementations
 {
     public class PostService : IPostService
     {

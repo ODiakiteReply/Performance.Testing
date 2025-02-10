@@ -1,16 +1,27 @@
-FROM mcr.microsoft.com/dotnet/aspnet:8.0-alpine AS base
+FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
 WORKDIR /app
+EXPOSE 80
 
-ENTRYPOINT ["dotnet", "AZWebAppCDB1.API.dll"]
+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
+WORKDIR /src
+COPY ["src/Performance.Testing.API/Performance.Testing.API.csproj", "Performance.Testing.API/"]
+COPY ["src/Performance.Testing.Business/Performance.Testing.Business.csproj", "Performance.Testing.Business/"]
+COPY ["src/Performance.Testing.Common/Performance.Testing.Common.csproj", "Performance.Testing.Common/"]
+COPY ["src/Performance.Testing.DataAccess/Performance.Testing.DataAccess.csproj", "Performance.Testing.DataAccess/"]
+COPY ["src/Performance.Testing.Models/Performance.Testing.Models.csproj", "Performance.Testing.Models/"]
+COPY ["src/Performance.Testing.Translators/Performance.Testing.Translators.csproj", "Performance.Testing.Translators/"]
+RUN dotnet restore "Performance.Testing.API/Performance.Testing.API.csproj"
+COPY /src .
+WORKDIR "/src/Performance.Testing.API"
+RUN dotnet build "Performance.Testing.API.csproj" -c Release -o /app/build
 
-RUN apk add --no-cache icu-libs
+FROM build AS publish
+RUN dotnet publish "Performance.Testing.API.csproj" -c Release -o /app/publish
 
-#installs libgdiplus to support System.Drawing for handling of graphics
-RUN apk add --no-cache libgdiplus --repository http://dl-cdn.alpinelinux.org/alpine/edge/testing/
+FROM base AS final
+WORKDIR /app
+COPY --from=publish /app/publish ./
 
-#installs some standard fonts needed for Autofit columns support
-RUN apk --no-cache add msttcorefonts-installer fontconfig freetype-dev libjpeg-turbo-dev libpng-dev && \
-    update-ms-fonts && \
-    fc-cache -f
+ENTRYPOINT ["dotnet", "Performance.Testing.API.dll"]
 
-ENV DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=false
+#ENV DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=false

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AZWebAppCDB1.Common
+namespace Performance.Testing.Common
 {
     public class ServicePrincipalConstants
     {

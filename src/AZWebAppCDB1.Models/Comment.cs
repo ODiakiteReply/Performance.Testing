@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 using Microsoft.WindowsAzure.Storage.Table;
 
 
-namespace AZWebAppCDB1.Models
+namespace Performance.Testing.Models
 {
     public class Comment : TableEntity
     {

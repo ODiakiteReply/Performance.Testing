@@ -1,12 +1,12 @@
 ﻿using System;
-using AZWebAppCDB1.Common;
-using AZWebAppCDB1.Models;
+using Performance.Testing.Common;
+using Performance.Testing.Models;
 using Microsoft.Azure.Cosmos;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Configuration;
-using AZWebAppCDB1.DataAccess.Repositories.CDRepositories.Interfaces;
+using Performance.Testing.DataAccess.Repositories.CDRepositories.Interfaces;
 
-namespace AZWebAppCDB1.DataAccess.Repositories.CDRepositories.Implementations
+namespace Performance.Testing.DataAccess.Repositories.CDRepositories.Implementations
 {
     public class PostRepository : IPostRepository
     {

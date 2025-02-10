@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using AZWebAppCDB1.Common.Domain;
-using AZWebAppCDB1.Business.Services.Interfaces;
+using Performance.Testing.Common.Domain;
+using Performance.Testing.Business.Services.Interfaces;
 
 
-namespace AZWebAppCDB1.API.Controllers
+namespace Performance.Testing.API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
@@ -30,8 +30,16 @@ namespace AZWebAppCDB1.API.Controllers
         [HttpGet]
         public async Task<IActionResult> GetComments()
         {
-            var comments = await _commentService.GetAllAsync();
-            return Ok(comments);
+            //var comments = await _commentService.GetAllAsync();
+            Console.WriteLine("GetComments");
+            return Ok(new List<CommentDTO> { new() {
+                    Id = string.Empty,
+                    Content = "test content",
+                    CreatedAt = DateTime.Now,
+                    Author = "test author",
+                    UpdatedAt = DateTime.Now,
+                } 
+            });
         }
 
         [HttpGet("{id}")]

@@ -1,8 +1,8 @@
 ﻿using System;
-using AZWebAppCDB1.Models;
+using Performance.Testing.Models;
 
 
-namespace AZWebAppCDB1.DataAccess.Repositories.CDRepositories.Interfaces
+namespace Performance.Testing.DataAccess.Repositories.CDRepositories.Interfaces
 {
     public interface IPostRepository
     {

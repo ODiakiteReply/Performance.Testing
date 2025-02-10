@@ -1,10 +1,10 @@
 ﻿using System;
-using AZWebAppCDB1.Common;
-using AZWebAppCDB1.DataAccess.Repositories.CDRepositories.Implementations;
+using Performance.Testing.Common;
+using Performance.Testing.DataAccess.Repositories.CDRepositories.Implementations;
 using Microsoft.Azure.Cosmos;
 using Microsoft.Extensions.Configuration;
 
-namespace AZWebAppCDB1.DataAccess.DbContext
+namespace Performance.Testing.DataAccess.DbContext
 {
     public sealed class AZWebApp1DbContext
     {
