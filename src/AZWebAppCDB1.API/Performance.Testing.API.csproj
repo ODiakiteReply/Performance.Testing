@@ -16,8 +16,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AZWebAppCDB1.Business\AZWebAppCDB1.Business.csproj" />
-    <ProjectReference Include="..\AZWebAppCDB1.Translators\AZWebAppCDB1.Translators.csproj" />
+    <ProjectReference Include="..\AZWebAppCDB1.Business\Performance.Testing.Business.csproj" />
+    <ProjectReference Include="..\AZWebAppCDB1.Translators\Performance.Testing.Translators.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,10 +1,10 @@
 ﻿using AutoMapper;
-using Common.Extensions.Enum;
-using AZWebAppCDB1.Common.Domain;
-using AZWebAppCDB1.Business.Services.Interfaces;
-using AZWebAppCDB1.DataAccess.Repositories.CDRepositories.Interfaces;
+using Performance.Testing.Common.Domain;
+using Performance.Testing.Business.Services.Interfaces;
+using Performance.Testing.DataAccess.Repositories.CDRepositories.Interfaces;
+using Performance.Testing.Common.Enums;
 
-namespace AZWebAppCDB1.Business.Services.Implementations
+namespace Performance.Testing.Business.Services.Implementations
 {
     public class UserService : IUserService
     {

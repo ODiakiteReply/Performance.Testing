@@ -1,6 +1,6 @@
 {
   "profiles": {
-    "AZWebAppCDB1": {
+    "Performance.Testing": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "swagger",

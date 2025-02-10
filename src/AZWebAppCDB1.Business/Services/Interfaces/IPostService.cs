@@ -1,7 +1,7 @@
-﻿using AZWebAppCDB1.Common.Domain;
+﻿using Performance.Testing.Common.Domain;
 
 
-namespace AZWebAppCDB1.Business.Services.Interfaces
+namespace Performance.Testing.Business.Services.Interfaces
 {
     public interface IPostService
     {

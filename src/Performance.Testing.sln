@@ -10,17 +10,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		..\README.md = ..\README.md
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AZWebAppCDB1.API", "AZWebAppCDB1.API\AZWebAppCDB1.API.csproj", "{EA926D75-5AFA-4E84-A637-8EE6C0B8C78A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Performance.Testing.API", "AZWebAppCDB1.API\Performance.Testing.API.csproj", "{EA926D75-5AFA-4E84-A637-8EE6C0B8C78A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AZWebAppCDB1.Translators", "AZWebAppCDB1.Translators\AZWebAppCDB1.Translators.csproj", "{194A44DA-4384-491D-BBFA-FC07057BBC22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Performance.Testing.Translators", "AZWebAppCDB1.Translators\Performance.Testing.Translators.csproj", "{194A44DA-4384-491D-BBFA-FC07057BBC22}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AZWebAppCDB1.Business", "AZWebAppCDB1.Business\AZWebAppCDB1.Business.csproj", "{3A3F2442-22D2-41F1-AE33-7BBA59248CAC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Performance.Testing.Business", "AZWebAppCDB1.Business\Performance.Testing.Business.csproj", "{3A3F2442-22D2-41F1-AE33-7BBA59248CAC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AZWebAppCDB1.Common", "AZWebAppCDB1.Common\AZWebAppCDB1.Common.csproj", "{3ABCB184-5F4E-47C7-B4C2-EA5680D71CD2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Performance.Testing.Common", "AZWebAppCDB1.Common\Performance.Testing.Common.csproj", "{3ABCB184-5F4E-47C7-B4C2-EA5680D71CD2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AZWebAppCDB1.DataAccess", "AZWebAppCDB1.DataAccess\AZWebAppCDB1.DataAccess.csproj", "{9F135990-0A0D-432C-8F92-24FE9BE09F6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Performance.Testing.DataAccess", "AZWebAppCDB1.DataAccess\Performance.Testing.DataAccess.csproj", "{9F135990-0A0D-432C-8F92-24FE9BE09F6B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AZWebAppCDB1.Models", "AZWebAppCDB1.Models\AZWebAppCDB1.Models.csproj", "{3715ADAD-32C1-4794-A467-2DEAF9DFF201}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Performance.Testing.Models", "AZWebAppCDB1.Models\Performance.Testing.Models.csproj", "{3715ADAD-32C1-4794-A467-2DEAF9DFF201}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

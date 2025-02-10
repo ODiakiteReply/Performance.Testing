@@ -1,8 +1,8 @@
 ﻿using System;
-using AZWebAppCDB1.Common.Enums;
+using Performance.Testing.Common.Enums;
 
 
-namespace AZWebAppCDB1.Common.Domain
+namespace Performance.Testing.Common.Domain
 {
     public class UserDTO
     {

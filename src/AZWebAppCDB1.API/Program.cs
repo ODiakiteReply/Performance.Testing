@@ -1,7 +1,7 @@
 using AutoMapper;
-using AZWebAppCDB1.Translators;
+using Performance.Testing.Translators;
 using System.Text.Json.Serialization;
-using AZWebAppCDB1.Business.Extensions;
+using Performance.Testing.Business.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 

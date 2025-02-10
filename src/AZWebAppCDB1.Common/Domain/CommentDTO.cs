@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AZWebAppCDB1.Common.Domain
+namespace Performance.Testing.Common.Domain
 {
     public class CommentDTO
     {

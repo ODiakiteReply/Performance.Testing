@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 
-namespace AZWebAppCDB1.Common.Enums
+namespace Performance.Testing.Common.Enums
 {
     public enum RoleEnum
     {

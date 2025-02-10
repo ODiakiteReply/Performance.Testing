@@ -1,11 +1,10 @@
 ﻿using System;
 using AutoMapper;
-using AZWebAppCDB1.Models;
-using Common.Extensions.Enum;
-using AZWebAppCDB1.Common.Domain;
-using AZWebAppCDB1.Common.Enums;
+using Performance.Testing.Models;
+using Performance.Testing.Common.Domain;
+using Performance.Testing.Common.Enums;
 
-namespace AZWebAppCDB1.Translators
+namespace Performance.Testing.Translators
 {
     public class Translator : Profile
     {

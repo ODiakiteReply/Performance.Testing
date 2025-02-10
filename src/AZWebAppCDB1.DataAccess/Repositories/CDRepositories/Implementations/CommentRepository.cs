@@ -1,13 +1,13 @@
 ﻿using System;
-using AZWebAppCDB1.Models;
-using AZWebAppCDB1.Common;
+using Performance.Testing.Models;
+using Performance.Testing.Common;
 using Microsoft.Azure.Cosmos;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Configuration;
-using AZWebAppCDB1.DataAccess.Repositories.CDRepositories.Interfaces;
+using Performance.Testing.DataAccess.Repositories.CDRepositories.Interfaces;
 
 
-namespace AZWebAppCDB1.DataAccess.Repositories.CDRepositories.Implementations
+namespace Performance.Testing.DataAccess.Repositories.CDRepositories.Implementations
 {
     public class CommentRepository : ICommentRepository
     {

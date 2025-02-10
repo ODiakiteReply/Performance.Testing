@@ -2,7 +2,7 @@
 using System.Reflection;
 using System.ComponentModel;
 
-namespace Common.Extensions.Enum
+namespace Performance.Testing.Common.Enums
 {
     public static class EnumExtensions
     {
