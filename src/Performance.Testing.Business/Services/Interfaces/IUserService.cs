@@ -1,4 +1,5 @@
-﻿using Performance.Testing.Common.Domain;
+﻿using System;
+using Performance.Testing.Common.Domain;
 
 namespace Performance.Testing.Business.Services.Interfaces
 {

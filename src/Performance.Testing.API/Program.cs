@@ -1,6 +1,6 @@
 using AutoMapper;
-using Performance.Testing.Translators;
 using System.Text.Json.Serialization;
+using Performance.Testing.Translators;
 using Performance.Testing.Business.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);

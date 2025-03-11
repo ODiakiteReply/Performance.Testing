@@ -4,9 +4,8 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <TargetFramework>net6.0</TargetFramework>
-  <UserSecretsId>AZWebAppCDB1.API-1A3C3D4E-5F6G-7H8I-9J0K-1L2M3N4O5P6</UserSecretsId>
-  <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
-  <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
+  <UserSecretsId>Performance.Testing.API-1A3C3D4E-5F6G-7H8I-9J0K-1L2M3N4O5P6</UserSecretsId>
+  <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
   </PropertyGroup>
 
   <ItemGroup>
@@ -16,8 +15,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AZWebAppCDB1.Business\Performance.Testing.Business.csproj" />
-    <ProjectReference Include="..\AZWebAppCDB1.Translators\Performance.Testing.Translators.csproj" />
+    <ProjectReference Include="..\Performance.Testing.Business\Performance.Testing.Business.csproj" />
+    <ProjectReference Include="..\Performance.Testing.Translators\Performance.Testing.Translators.csproj" />
   </ItemGroup>
 
 </Project>

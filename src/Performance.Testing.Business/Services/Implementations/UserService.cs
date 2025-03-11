@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
+using Performance.Testing.Common.Enums;
 using Performance.Testing.Common.Domain;
 using Performance.Testing.Business.Services.Interfaces;
 using Performance.Testing.DataAccess.Repositories.CDRepositories.Interfaces;
-using Performance.Testing.Common.Enums;
 
 namespace Performance.Testing.Business.Services.Implementations
 {

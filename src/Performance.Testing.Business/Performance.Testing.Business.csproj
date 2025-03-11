@@ -14,7 +14,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AZWebAppCDB1.DataAccess\Performance.Testing.DataAccess.csproj" />
+    <ProjectReference Include="..\Performance.Testing.Common\Performance.Testing.Common.csproj" />
+    <ProjectReference Include="..\Performance.Testing.DataAccess\Performance.Testing.DataAccess.csproj" />
   </ItemGroup>
 
 </Project>

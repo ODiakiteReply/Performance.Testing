@@ -1,0 +1,12 @@
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: performancetesting-webapi
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 5051
+    targetPort: 80
+  selector:
+    app: performancetesting-webapi

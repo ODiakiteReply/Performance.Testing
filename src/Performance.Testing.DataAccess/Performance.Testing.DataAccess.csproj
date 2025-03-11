@@ -15,8 +15,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AZWebAppCDB1.Common\Performance.Testing.Common.csproj" />
-    <ProjectReference Include="..\AZWebAppCDB1.Models\Performance.Testing.Models.csproj" />
+    <ProjectReference Include="..\Performance.Testing.Common\Performance.Testing.Common.csproj" />
+    <ProjectReference Include="..\Performance.Testing.Models\Performance.Testing.Models.csproj" />
   </ItemGroup>
 
 </Project>
