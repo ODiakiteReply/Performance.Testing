@@ -1,11 +1,10 @@
 ﻿using System;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.Configuration;
+using Performance.Testing.DataAccess.DbContext;
 using Microsoft.Extensions.DependencyInjection;
 using Performance.Testing.Business.Services.Interfaces;
 using Performance.Testing.Business.Services.Implementations;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Logging;
-using Performance.Testing.DataAccess.DbContext;
-using Microsoft.AspNetCore.Builder;
 using Performance.Testing.DataAccess.Repositories.CDRepositories.Interfaces;
 using Performance.Testing.DataAccess.Repositories.CDRepositories.Implementations;
 

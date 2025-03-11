@@ -1,8 +1,8 @@
 ﻿using System;
-using Performance.Testing.Common;
-using Performance.Testing.DataAccess.Repositories.CDRepositories.Implementations;
 using Microsoft.Azure.Cosmos;
 using Microsoft.Extensions.Configuration;
+using Performance.Testing.Common;
+using Performance.Testing.DataAccess.Repositories.CDRepositories.Implementations;
 
 namespace Performance.Testing.DataAccess.DbContext
 {

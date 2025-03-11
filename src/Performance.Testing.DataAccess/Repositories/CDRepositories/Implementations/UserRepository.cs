@@ -1,10 +1,9 @@
 ﻿using System;
-using Performance.Testing.Common;
 using Microsoft.Azure.Cosmos;
+using Performance.Testing.Common;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Configuration;
 using Performance.Testing.DataAccess.Repositories.CDRepositories.Interfaces;
-using Performance.Testing.Models;
 
 namespace Performance.Testing.DataAccess.Repositories.CDRepositories.Implementations
 {

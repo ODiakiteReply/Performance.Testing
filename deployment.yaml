@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: performancetesting-webapi
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: performancetesting-webapi
+  template:
+    metadata:
+      labels:
+        app: performancetesting-webapi
+    spec:
+      containers:
+      - name: performancetesting-webapi
+        image: odiakitereply/performancetesting-webapi:v1
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
+      imagePullSecrets:
+      - name: performancetesting-webapi-docker-secret
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: performancetesting-webapi
+spec:
+  type: LoadBalancer
+  ports:
+  - protocol: TCP
+    port: 80
+  selector:
+    app: performancetesting-webapi

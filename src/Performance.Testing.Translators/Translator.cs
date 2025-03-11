@@ -1,8 +1,7 @@
-﻿using System;
-using AutoMapper;
+﻿using AutoMapper;
 using Performance.Testing.Models;
-using Performance.Testing.Common.Domain;
 using Performance.Testing.Common.Enums;
+using Performance.Testing.Common.Domain;
 
 namespace Performance.Testing.Translators
 {
